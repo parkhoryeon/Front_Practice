@@ -19,6 +19,8 @@
     <!-- Scripts -->
     <script src="./static/scripts/common.js" defer></script>
     <script src="./static/scripts/main.js" defer></script>
+    <script src="./static/scripts/swiper_set.js" defer></script>
+
 </head>
 <body>
     <section id="top_banner">
@@ -27,6 +29,7 @@
             <span>카카오톡 1초 회원가입으로 적립금 1,000원 받기</span>
         </a>
     </section>
+    <section id="overlay"></section>
     <header id="header">
         <aside>
             <div class="top">
@@ -123,5 +126,33 @@
             </nav>
         </div>
     </header>
+    <section id="swiper_banner">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./static/images/b97fdff25670c949e10850b4ed9536ec.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/567bb8375b95793ed9d6b012ec872ae0.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./static/images/d2e785b71a78976cb1949d939f4d6ee7.jpg" alt="">
+            </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
 </body>
 </html>
