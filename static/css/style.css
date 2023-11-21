@@ -1,0 +1,236 @@
+/* HTML */
+html {
+  font-size: 16px;
+}
+/* TOP BANNER */
+#top_banner {
+  height: 50px;
+  background-color: #292929;
+}
+#top_banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+#top_banner a img {
+}
+#top_banner a span {
+  color: #fff;
+}
+
+/* HEADER */
+#header {
+  height: 110px;
+  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+}
+#header aside {
+  position: absolute;
+  background-color: #fff;
+  border-right: 1px solid #f2f2f2;
+  z-index: 9;
+  height: 100vh;
+  width: 21.8125rem;
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  left: -500px;
+  opacity: 0;
+  transition: left 0.5s, opacity 0.5s;
+}
+#header aside.show {
+  opacity: 1;
+  left: 0;
+  transition: left 0.5s, opacity 1s; /* 트랜지션 효과 추가 */
+}
+/* .show 클래스가 제거될 때의 트랜지션 효과 */
+#header aside:not(.show) {
+  transition: left 0.5s, opacity 1s;
+}
+#header aside .top {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 2rem 1rem;
+}
+#header aside .top .top_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#header aside .top .top_top img {
+}
+#header aside .top .top_top a {
+}
+#header aside .top .top_top a img {
+}
+#header aside .top .top_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#header aside .top .top_bottom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+}
+#header aside .top .top_bottom a.login_btn {
+  background-color: #111;
+  color: #fff;
+  border-radius: 50px;
+}
+#header aside .top .top_bottom a.join_btn {
+  border-radius: 50px;
+  border: 2px solid #111;
+}
+#header aside .center {
+  margin-bottom: 10rem;
+}
+#header aside .center li {
+  /* padding: 0 1rem; */
+  /* background-color: orange; */
+  height: 65px;
+}
+#header aside .center li:hover a {
+  background-color: #00c3ff;
+  color: #fff;
+}
+#header aside .center li a {
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 2rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.125rem;
+}
+#header aside .bottom {
+  padding: 0 1rem;
+}
+#header aside .bottom .cs_center {
+  font-size: 1.25rem;
+  color: #00c3ff;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+#header aside .bottom .hp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+#header aside .bottom .time {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+#header aside .bottom .time span {
+  color: #a3a3a3;
+}
+#header aside .bottom .icons {
+  display: flex;
+  gap: 20px;
+}
+#header aside .bottom .icons img {
+}
+
+#header .inner {
+}
+#header .inner nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .inner nav .left {
+  height: 100%;
+  display: flex;
+  gap: 25px;
+}
+#header .inner nav .left li {
+}
+#header .inner nav .left li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .inner nav .left li a img {
+}
+
+#header .inner nav .center {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+#header .inner nav .center li {
+  position: relative;
+}
+#header .inner nav .center > li > a {
+  padding: 1.5rem 3.2em 2.2rem 3.2rem;
+}
+#header .inner nav .center li:hover a span {
+  color: #00c3ff;
+}
+#header .inner nav .center li a span {
+}
+#header .inner nav .center li a.add_menu {
+}
+#header .inner nav .center li a.add_menu span {
+}
+#header .inner nav .center li:hover ul.sub_menu {
+  display: flex;
+}
+#header .inner nav .center li ul.sub_menu {
+  padding: 1.5rem 0;
+  position: absolute;
+  width: 164px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  display: none;
+}
+#header .inner nav .center li ul.sub_menu li {
+}
+#header .inner nav .center li ul.sub_menu li a:hover {
+  color: #111;
+}
+#header .inner nav .center li ul.sub_menu li a {
+  color: #b3b3b3;
+}
+
+#header .inner nav .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+#header .inner nav .right li {
+}
+#header .inner nav .right li a {
+  position: relative;
+}
+#header .inner nav .right li a .basket_cnt_prt {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #00c3ff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .inner nav .right li a .basket_cnt_prt span {
+  font-size: 0.75rem;
+  color: #fff;
+}
+#header .inner nav .right li a span {
+}
+#header .inner nav .right li a img {
+}
