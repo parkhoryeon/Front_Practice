@@ -27,8 +27,8 @@ html {
   transition: background-color 0.5s, opacity 1s;
 }
 #overlay {
-  position: absolute; 
-  height: 100vh; 
+  position: absolute;
+  height: 100vh;
   width: 100vw;
   opacity: 0;
   transition: background-color 0.5s, opacity 1s;
@@ -250,23 +250,32 @@ html {
 }
 
 /* SWIPER BANNER */
-#swiper_banner {}
-#swiper_banner .swiper {}
-#swiper_banner .swiper .swiper-wrapper {}
-#swiper_banner .swiper .swiper-slide {}
+#swiper_banner {
+}
+#swiper_banner .swiper {
+}
+#swiper_banner .swiper .swiper-wrapper {
+}
+#swiper_banner .swiper .swiper-slide {
+}
 #swiper_banner .swiper .swiper-slide img {
   min-width: 100%;
   height: 100%;
   overflow: hidden;
 }
-#swiper_banner .swiper .swiper-pagination {}
-#swiper_banner .swiper .swiper-button-prev {}
-#swiper_banner .swiper .swiper-button-next {}
-#swiper_banner .swiper .swiper-scrollbar {}
+#swiper_banner .swiper .swiper-pagination {
+}
+#swiper_banner .swiper .swiper-button-prev {
+}
+#swiper_banner .swiper .swiper-button-next {
+}
+#swiper_banner .swiper .swiper-scrollbar {
+}
 
-/* SWIPER CUSTOM */
-.swiper-button-next:after, .swiper-button-prev:after {
-  color: #111;
+/* MAIN SWIPER CUSTOM */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #00c3ff;
 }
 .swiper-button-prev:after {
   position: absolute;
@@ -276,8 +285,92 @@ html {
   position: absolute;
   right: 100px;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   width: 50px;
   border-radius: 10px;
   background-color: #00c3ff;
+}
+
+/* SUGGESTION */
+#suggestion {
+  padding: 7rem 0;
+  background-color: #f8f8f8;
+}
+#suggestion .inner {
+}
+#suggestion .inner .sug_container {
+  display: flex;
+}
+#suggestion .inner .sug_container .sug_product {
+  flex: 1;
+}
+#suggestion .inner .sug_container .sug_product > span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #00c3ff;
+  margin: 0 0 40px;
+}
+#suggestion .inner .sug_container .sug_product .sug_title {
+}
+#suggestion .inner .sug_container .sug_product .sug_title span {
+  display: block;
+  font-size: 1.875rem;
+  color: #333;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+#suggestion .inner .sug_container .sug_product .sug_subtitle {
+}
+#suggestion .inner .sug_container .sug_product .sug_subtitle span {
+  color: #b3b3b3;
+  font-size: 1.125rem;
+  margin-bottom: 6.25rem;
+}
+#suggestion .inner .sug_container .sug.swiper {
+  flex: 3;
+  height: auto;
+}
+#suggestion .inner .sug_container .sug.swiper .swiper-wrapper {
+}
+#suggestion .inner .sug_container .sug.swiper .swiper-wrapper .swiper-slide {
+}
+#suggestion .inner .prod {
+  width: 15.1875rem;
+}
+#suggestion .inner .prod img {
+  width: 15.1875rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+#suggestion .inner .prod .hash {
+  color: #a5a5a5;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+#suggestion .inner .prod .prod_name {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+#suggestion .inner .prod .price {
+  display: flex;
+  justify-content: space-between;
+}
+#suggestion .inner .prod .price .perc {
+  color: #db3838;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#suggestion .inner .prod .price .pric {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#suggestion .inner .prod .price .befo {
+  color: #bababa;
+  font-size: 0.875rem;
+  text-decoration: line-through;
 }
